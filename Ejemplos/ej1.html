@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style type="text/css">
+ 	body{
+			color: #151515;
+			background: #9F81F7
+		}
+ </style>
+	<title> simulador de costos de un prestamo </title>
+</head>
+<body>
+	<center> simulador de costos de un prestamo </center>
+	<center>
+	<label for="accept">
+	<input type="checkbox" id="uva" name="uva" value="si"><b>¿uva?</b> 
+    </label><br><br><br>
+	<br>
+<h3>Monto pedido</h3> <input type="text" id="monto"/>
+<br>
+<h3>CANTIDAD DE CUOTAS</h3>
+<input type="submit" name="calcular" onclick="calcular12()" value="12">
+<input type="submit" name="calcular" onclick="calcular24()" value="24">
+<input type="submit" name="calcular" onclick="calcular36()" value="36">
+<br><br><br></center>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function calcular12(){
+var monto=document.getElementById("monto").value;
+var uva=document.getElementById("uva").checked;
+var val=Number.parseInt(monto);
+if(uva==true){
+rta=(val*0.6);
+document.getElementById("uva").checked = false;
+}
+else{
+	rta=(val*0.55);
+}
+alert('Valor cuota:'+ ((rta+val)/12));
+}
+	function calcular24(){
+var monto=document.getElementById("monto").value;
+var uva=document.getElementById("uva").checked;
+var val=Number.parseInt(monto);
+if(uva==true){
+rta=(val*0.6);
+document.getElementById("uva").checked = false;
+}
+else{
+	rta=(val*0.55);
+}
+alert('Valor cuota:'+ ((rta+val)/24));
+}
+	function calcular36(){
+var monto=document.getElementById("monto").value;
+var uva=document.getElementById("uva").checked;
+var val=Number.parseInt(monto);
+if(uva==true){
+rta=(val*0.6);
+document.getElementById("uva").checked = false;
+}
+else{
+	rta=(val*0.55);
+}
+alert('Valor cuota: ' + ((rta+val)/36));
+}
+</script>

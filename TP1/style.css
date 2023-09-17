@@ -1,0 +1,36 @@
+html{
+    background-color: #0abfbc;
+}
+.padre{
+    height:49vw;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo{
+    height: 500px;
+    width: 300px;
+    background-color: #fc354c;
+    text-align: center;
+    border-radius: 20px;
+}
+
+input{
+    margin: 20px;
+}
+
+#boton{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    color: #fcf7c5;
+    border: none;
+    border-radius: 10px;
+    background-color: #29221f;
+}
+
+label{
+    font-size: 20px;
+}

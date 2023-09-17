@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="padre">
+            <div class="hijo">
+                <h2>Simulador De Vuelo</h2>
+                <label>Origen</label>
+                <select id="origen">
+                    <option value="cor">Cordoba</option>
+                    <option value="mdz">Mendoza</option>
+                    <option value="bue">Buenos Aires</option>
+                </select>
+                <br>
+                <label>Destino</label>
+                <select id="destino">
+                    <option value="cor">Cordoba</option>
+                    <option value="ush">Usuahia</option>
+                    <option value="bue">Buenos Aires</option>
+                    <option value="igu">Iguazu</option>
+                </select>
+                <br>
+                <label>tipo de asiento:</label>
+                <br>
+                <label>Premier</label>
+                <input type="radio" id="asiento" value="premier">
+                <label>Plus</label>
+                <input type="radio" id="asiento" value="plus">
+                <br>
+                <label>¿Equipaje Extra?</label>
+                <br>
+                <label>si</label>
+                <input type="checkbox" id="equipaje">
+                <br>
+                <input type="submit" name="calcular" onclick="calcular()" id="boton">
+            </div>
+        </div>
+    </body>
+</html>
