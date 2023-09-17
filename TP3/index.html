@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <title>Trabajo Practico N°</title>
+
+    <title>Tp3</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    
     </head>
     <body>
-        
+        <h1 aling=center>Simulador de pedido de un mueble</h1> 
+        <div class="padre">
+            <div class="hijo">
+
+                <label>Descripcion del mueble</label>
+                <input type="text" name="desc" id="descri">
+
+                <h1></h1>
+                
+                <label>Tipo de material</label>
+                <select name="tipo" id="tipe">
+                    <option value="roble">roble</option>
+                    <option value="algarrobo">algarrobo</option>
+                    <option value="cedro">cedro</option>
+                </select>
+
+                <h1></h1>
+
+                <label>Solicita envio a domicilio?</label>
+                <input type="checkbox" name="envi" id="envio">
+                
+                <h1></h1>
+                
+                <label>Cantidad solicitada</label>
+                <input type="text" name="cant" id="canti">
+                
+                <h1></h1>
+
+                <input type="submit" value="calcular" onclick="calcular()">
+       
+            </div>   
+        </div>
     </body>
 </html>
